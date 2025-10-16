@@ -4,11 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Happy Birthday Chelli!</title>
+
 <style>
   body {
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fbc2eb);
+    background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #fbc2eb, #a6c1ee);
+    background-size: 400% 400%;
+    animation: gradientMove 10s ease infinite;
     font-family: 'Comic Sans MS', cursive, sans-serif;
     display: flex;
     flex-direction: column;
@@ -18,6 +21,12 @@
     overflow: hidden;
     text-align: center;
     color: #fff;
+  }
+
+  @keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
   }
 
   h1 {
@@ -82,9 +91,9 @@
     0% { top: -10px; transform: rotate(0deg);}
     100% { top: 100vh; transform: rotate(360deg);}
   }
-
 </style>
 </head>
+
 <body>
 
 <h1>🎉 Many More Happy Returns Of The Day Sister! 🎉</h1>
